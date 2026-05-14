@@ -1,0 +1,118 @@
+{
+    "frame_idx": 1,
+    "status": "FAIL",
+    "summary": {
+        "ok": 9,
+        "missing": 19,
+        "misplaced": 0,
+        "extra": 18,
+        "status": "FAIL"
+    },
+    "paths": {
+        "raw": "/workspace/results/gui_pcb_inspection/raw/latest_raw.jpg",
+        "corrected": "/workspace/results/gui_pcb_inspection/corrected/latest_corrected.jpg",
+        "overlay": "/workspace/results/gui_pcb_inspection/overlay/latest_result.jpg",
+        "overlay_failures": "/workspace/results/gui_pcb_inspection/overlay_failures/latest_failures.jpg",
+        "components_csv": "/workspace/results/gui_pcb_inspection/components/latest_components.csv",
+        "comparison_csv": "/workspace/results/gui_pcb_inspection/comparison/latest_comparison.csv",
+        "mask_debug": "/workspace/results/gui_pcb_inspection/debug/mask/latest_mask.png",
+        "homography_debug": "/workspace/results/gui_pcb_inspection/debug/homography/latest_homography_debug.jpg",
+        "orientation_debug": "/workspace/results/gui_pcb_inspection/debug/orientation/latest_orientation_debug.jpg"
+    },
+    "timing": {
+        "homography_seconds": 0.11261918300078833,
+        "orientation_seconds": 2.636510009000631,
+        "yolo_seconds": 0.6125748420017771,
+        "comparison_seconds": 0.07872874099848559,
+        "total_seconds": 3.475972856998851
+    },
+    "homography": {
+        "method": "hough",
+        "corners_ordered": [
+            [
+                163.1234588623047,
+                260.0
+            ],
+            [
+                429.0,
+                260.0
+            ],
+            [
+                443.4347839355469,
+                426.0
+            ],
+            [
+                142.62962341308594,
+                426.0
+            ]
+        ],
+        "mask_border_check": {
+            "touches_border": false,
+            "touching_edges": [],
+            "counts": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "margin_px": 3,
+            "min_green_pixels": 20
+        }
+    },
+    "orientation": {
+        "selected_variant": "normal",
+        "score": 0.8548637628555298,
+        "scale": 0.6100000000000001,
+        "quadrant": "tr",
+        "elapsed_seconds": 2.636510009000631
+    },
+    "orientation_all_results": [
+        {
+            "variant": "normal",
+            "score": 0.8548637628555298,
+            "score_total": 0.8548637628555298,
+            "scale": 0.6100000000000001,
+            "quadrant": "tr",
+            "elapsed_seconds": 0.6726729109977896,
+            "scales_valid": 9,
+            "scales_tested": 9
+        },
+        {
+            "variant": "rot180",
+            "score": 0.43422138690948486,
+            "score_total": 0.43422138690948486,
+            "scale": 0.6400000000000001,
+            "quadrant": "bl",
+            "elapsed_seconds": 0.6528546259978611,
+            "scales_valid": 9,
+            "scales_tested": 9
+        },
+        {
+            "variant": "flip_horizontal",
+            "score": 0.39680325984954834,
+            "score_total": 0.39680325984954834,
+            "scale": 0.6100000000000001,
+            "quadrant": "tl",
+            "elapsed_seconds": 0.6527895040017029,
+            "scales_valid": 9,
+            "scales_tested": 9
+        },
+        {
+            "variant": "flip_vertical",
+            "score": 0.6665797233581543,
+            "score_total": 0.6665797233581543,
+            "scale": 0.6100000000000001,
+            "quadrant": "br",
+            "elapsed_seconds": 0.648964256997715,
+            "scales_valid": 9,
+            "scales_tested": 9
+        }
+    ],
+    "detections_count": 27,
+    "params": {
+        "component_model": "/workspace/weights/best.pt",
+        "conf": 0.49,
+        "max_center_distance": 0.035,
+        "max_center_distance_relaxed": 0.06
+    }
+}
