@@ -8,7 +8,7 @@ PYTHON_SCRIPT_HOST="$WORKSPACE_HOST/pcb_realtime_pipeline.py"
 
 OUTPUT_DIR="$WORKSPACE_HOST/results/realtime_pcb"
 REFERENCE_DIR="$WORKSPACE_HOST/referenceBoard"
-CONFIG_PATH="$WORKSPACE_HOST/config_fiduciales.json"
+CONFIG_PATH="$WORKSPACE_HOST/config_homografia.json"
 ORIENTATION_TEMPLATE="$WORKSPACE_HOST/keypoints/serigrafia.png"
 COMPONENT_MODEL=""
 
@@ -49,6 +49,15 @@ CAMERA_HEIGHT="0"
 SAVE_HISTORY=false
 
 DOCKER_IMAGE="ultralytics/ultralytics:latest-jetson-jetpack6"
+
+# Opciones específicas para Jetson / GPU NVIDIA.
+# --runtime=nvidia: permite acceso a GPU/CUDA en Jetson.
+# --ipc=host y --shm-size=3g: evitan problemas de memoria compartida en procesos de visión/inferencia.
+DOCKER_GPU_ARGS=(
+  --runtime=nvidia
+  --ipc=host
+  --shm-size=3g
+)
 
 declare -a EXTRA_MOUNT_SOURCES=()
 declare -a EXTRA_MOUNT_TARGETS=()
@@ -171,10 +180,10 @@ set_container_path() {
 
 guess_default_model() {
   local candidates=(
-    "$WORKSPACE_HOST/train37/weights/best.pt"
-    "$WORKSPACE_HOST/train37/weights/best.engine"
     "$WORKSPACE_HOST/weights/best.pt"
     "$WORKSPACE_HOST/weights/best.engine"
+    "$WORKSPACE_HOST/train37/weights/best.pt"
+    "$WORKSPACE_HOST/train37/weights/best.engine"
   )
 
   for p in "${candidates[@]}"; do
@@ -418,6 +427,7 @@ done
 DOCKER_DEVICES=()
 DOCKER_GROUPS=()
 VIDEO_DEVICES_FOUND=false
+CAMERA_SOURCE_CONT="$CAMERA_SOURCE"
 
 shopt -s nullglob
 for dev in /dev/video*; do
@@ -454,12 +464,10 @@ elif [[ "$CAMERA_SOURCE" == /dev/video* ]]; then
   fi
 
   CAMERA_SOURCE_CONT="$CAMERA_SOURCE"
-
-else
-  CAMERA_SOURCE_CONT="$CAMERA_SOURCE"
 fi
 
 VIDEO_GID="$(getent group video | cut -d: -f3 || true)"
+
 if [[ -n "$VIDEO_GID" ]]; then
   DOCKER_GROUPS+=(--group-add "$VIDEO_GID")
 fi
@@ -540,6 +548,7 @@ echo "  conf:                         $CONF"
 echo "  max-center-distance:          $MAX_CENTER_DISTANCE"
 echo "  max-center-distance-relaxed:  $MAX_CENTER_DISTANCE_RELAXED"
 echo "  docker image:                 $DOCKER_IMAGE"
+echo "  docker gpu args:              ${DOCKER_GPU_ARGS[*]}"
 echo ""
 
 if [[ "${#EXTRA_MOUNT_SOURCES[@]}" -gt 0 ]]; then
@@ -559,6 +568,7 @@ fi
 echo ""
 
 docker run --rm \
+  "${DOCKER_GPU_ARGS[@]}" \
   --user "$(id -u):$(id -g)" \
   "${DOCKER_GROUPS[@]}" \
   --device-cgroup-rule='c 81:* rmw' \

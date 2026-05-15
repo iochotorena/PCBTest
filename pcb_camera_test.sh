@@ -13,6 +13,13 @@ OUTPUT_PATH="$WORKSPACE_HOST/results/gui_pcb_inspection/camera_test/latest_camer
 
 DOCKER_IMAGE="ultralytics/ultralytics:latest-jetson-jetpack6"
 
+# Opciones específicas para Jetson / GPU NVIDIA.
+DOCKER_GPU_ARGS=(
+  --runtime=nvidia
+  --ipc=host
+  --shm-size=3g
+)
+
 declare -a EXTRA_MOUNT_SOURCES=()
 declare -a EXTRA_MOUNT_TARGETS=()
 CONTAINER_PATH_RESULT=""
@@ -219,6 +226,7 @@ echo "  output container:        $OUTPUT_PATH_CONT"
 echo "  video devices found:     $VIDEO_DEVICES_FOUND"
 echo "  video group gid:         ${VIDEO_GID:-none}"
 echo "  docker image:            $DOCKER_IMAGE"
+echo "  docker gpu args:         ${DOCKER_GPU_ARGS[*]}"
 echo ""
 
 if [[ "${#EXTRA_MOUNT_SOURCES[@]}" -gt 0 ]]; then
@@ -238,6 +246,7 @@ fi
 echo ""
 
 docker run --rm \
+  "${DOCKER_GPU_ARGS[@]}" \
   --user "$(id -u):$(id -g)" \
   "${DOCKER_GROUPS[@]}" \
   --device-cgroup-rule='c 81:* rmw' \
