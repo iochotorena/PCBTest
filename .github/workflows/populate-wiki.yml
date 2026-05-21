@@ -2,6 +2,9 @@ name: Populate Wiki
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - copilot/rellenar-wiki-con-informacion
 
 permissions:
   contents: write
