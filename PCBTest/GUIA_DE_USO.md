@@ -140,6 +140,10 @@ En esta pestaña se verifican o seleccionan las rutas que necesita el programa. 
 | **config_homografia.json** | Define el ancho y alto de la imagen corregida. |
 | **Serigrafía orientación** | Imagen de serigrafía usada para determinar la orientación. |
 
+Ejemplo de imagen de serigrafía (`keypoints/serigrafia.png`):
+
+![Serigrafía de orientación](keypoints/serigrafia.png)
+
 ### config_homografia.json
 
 Este fichero **no** detecta la placa. Define el tamaño de la imagen que se generará tras la homografía. Contenido mínimo:
@@ -198,6 +202,10 @@ La imagen de prueba se guarda en:
 ```
 results/gui_pcb_inspection/camera_test/latest_camera_test.jpg
 ```
+
+Ejemplo de imagen de prueba de cámara:
+
+![Captura de prueba de cámara](results/gui_pcb_inspection/camera_test/latest_camera_test.jpg)
 
 **Resolución**
 
@@ -270,6 +278,14 @@ Antes de ejecutar una inspección, verifique que la cámara ve correctamente y q
 
 Tras la inspección, el programa genera una imagen y varios ficheros CSV. La GUI normalmente muestra `latest_failures.jpg`, la imagen que resalta los fallos detectados.
 
+Ejemplo de imagen con fallos resaltados (`overlay_failures/latest_failures.jpg`):
+
+![Imagen de fallos detectados](results/gui_pcb_inspection/overlay_failures/latest_failures.jpg)
+
+Ejemplo de imagen corregida tras la homografía (`corrected/latest_corrected.jpg`):
+
+![Imagen corregida por homografía](results/gui_pcb_inspection/corrected/latest_corrected.jpg)
+
 | Estado | Significado |
 |--------|-------------|
 | **OK** | El componente de referencia se encontró y su posición es aceptable. |
@@ -337,12 +353,20 @@ Disminuya ligeramente la confianza YOLO o revise la iluminación y el enfoque.
 - Revise las imágenes de la carpeta `debug/homography/`.
 - Mantenga el método `hough`; habitualmente es el más robusto cuando los bordes son visibles.
 
+Ejemplo de imagen de depuración de homografía:
+
+![Depuración de homografía](results/gui_pcb_inspection/debug/homography/latest_homography_debug.jpg)
+
 **Orientación incorrecta**
 
 - Verifique que `keypoints/serigrafia.png` es correcto.
 - La serigrafía debe ser siempre visible.
 - No use una serigrafía muy pequeña o con mucho brillo.
 - Revise las imágenes de la carpeta `debug/orientation/`.
+
+Ejemplo de imagen de depuración de orientación:
+
+![Depuración de orientación](results/gui_pcb_inspection/debug/orientation/latest_orientation_debug.jpg)
 
 ---
 
