@@ -1,12 +1,7 @@
 YODAUT - Yolo Data Automation
 
 ZER DA?
-Dataset sintetiko sinpleak sortzeko Python-script bat da YODAUT. Input karpetan bg.png eta beste irudi batzu (png formatuan, transparentzia nahitaezkoa bait du) gorde eta  eta script-a exekutatzean irudi hauen arteko konbinaketak sortzen dira, konbinaketa desberdinak sortzeko hainbat parametro doitzeko aukerarekin. 
-
-NOLAKO IRUDIAK BEHAR DIRA? 
-YODAUT PCB sintetikoak modu errazean sortzeko sistema bat da. PNG irudiak erabiltzen ditu, denak tamainu berdinekoak. bg.png PCBa bera izango da, eta beste irudiak, PCBko osagai elektronikoak.
-
-https://github.com/iochotorena/PCBTest/blob/main/tools/2dDatasetCreator/input/bg.png
+YOLOrentzako dataset sintetiko sinpleak sortzeko Python-script bat da YODAUT. Input karpetan bg.png eta beste irudi batzu (png formatuan, transparentzia nahitaezkoa bait du) gorde eta script-a exekutatzean irudi hauen arteko konbinaketak sortzen dira, konbinaketa desberdinak sortzeko hainbat parametro doitzeko aukerarekin. Konbinaketa hauetatik irudi-label fitxategi bikoteak sortuko dira.
 
 GUTXIENEKO ESKAKIZUNAK
 - Python
@@ -16,24 +11,50 @@ GUTXIENEKO ESKAKIZUNAK
  - pyyaml
 - GIMP
   
-
 Python: Jarraitu zure sistemarentzako instalakuntza jarraibidieak
 https://www.python.org/downloads/
 
 Behin python instalatuta
 pip install numpy opencv-python matplotlib pyyaml
 
-NOLA ERABILI
 
+NOLAKO IRUDIAK BEHAR DIRA? 
+YODAUT PCB sintetikoak modu errazean sortzeko sistema bat da. PNG irudiak erabiltzen ditu, denak tamainu berdinekoak. bg.png PCBa bera izango da, eta beste irudiak, PCBko osagai elektronikoak.
+
+<img width="1355" height="934" alt="bg" src="https://github.com/user-attachments/assets/a79af8e0-7dc6-430a-930d-344ead9d0721" />
+bg.png
+
+<img width="1355" height="934" alt="00004_U1_OK" src="https://github.com/user-attachments/assets/ab14ca93-b9ef-4b14-bfa8-39bc5ceaf7cc" />
+U1_OK.png
+
+Irudiak konparatuz, argi ikusten da nola U1_OK.png integratuaren irudiak gardentasuna duen, eta aldi berean, bg.png-ren tamainu bera. Ikusi nola zirkuituan U1 integratuak izan beharko lukeen posizioarekin koinziditzen duen. Zirkuituko osagai guztien irudiak modu honetakoak izan beharko dira.
+
+
+NOLA ERABILI
 Deskargatu guztia, yodaut.py eta input karpeta
 Jarri dena karpeta berdinean
 
- python ydt.py --minelement 4 --maxelement 15  --min_factor 0.8 --max_factor 1.2 --min_angle -20 --max_angle 20 --dataset_dir directoriosalida
+python yodaut.py --minelement 4 --maxelement 15  --min_factor 0.8 --max_factor 1.2 --min_angle -20 --max_angle 20 --dataset_dir directoriosalida
+
+Argumentuak
+minelement: pcb-an montatuko den osagai kopuru minimoa
+maxelement: pcb-an montatuko den osagai kopuru maximoa
+min_factor: eskala_faktore minimoa
+max_factor: eskala_faktore maximoa
+min_angle: sortutako irudiaren errotazio minimoa
+max_angle: sortutako irudiaren errotazio maximoa
+dataset_dir: sortutako irudi eta etiketak gordeko diren karpeta
 
 
-directoriosalida izeneko karpeta bat sortuko du
-Bertan irudiak eta etiketak egongo dira, entrenatu eta balidatzeko (images eta labels azpikarpetetan)
+EMAITZAK
+"dataset_dir" karpetan:
+ - dataset_preview irudi bat sortuko da ausazko 16 irudirekin.
+ - images eta labels karpetak sortuko dira, irudi-label bikoteekin.
+ - data.yaml fitxategia
+ - classes.txt fitxategia
+ - index.txt fitxategia
 
-'data_preview' irudia begiratu, sortutako 16 irudi daude, eta labeletako kaxak marraztu dizkio gainean 
+
+
 
 
