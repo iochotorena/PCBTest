@@ -1,12 +1,27 @@
-# PCBAA
+YODAUT - Yolo Data Automation
 
-AURRETIK
+ZER DA?
+Dataset sintetiko sinpleak sortzeko Python-script bat da YODAUT. Input karpetan bg.png eta beste irudi batzu (png formatuan, transparentzia nahitaezkoa bait du) gorde eta  eta script-a exekutatzean irudi hauen arteko konbinaketak sortzen dira, konbinaketa desberdinak sortzeko hainbat parametro doitzeko aukerarekin. 
 
-Python libreria dependentziak osatzeko
+NOLAKO IRUDIAK BEHAR DIRA? 
+YODAUT PCB sintetikoak modu errazean sortzeko sistema bat da. PNG irudiak erabiltzen ditu, denak tamainu berdinekoak. bg.png PCBa bera izango da, eta beste irudiak, PCBko osagai elektronikoak.
 
+https://github.com/iochotorena/PCBTest/blob/main/tools/2dDatasetCreator/input/bg.png
+
+GUTXIENEKO ESKAKIZUNAK
+- Python
+ - numpy
+ - opencv-python
+ - matplotlib
+ - pyyaml
+- GIMP
+  
+
+Python: Jarraitu zure sistemarentzako instalakuntza jarraibidieak
+https://www.python.org/downloads/
+
+Behin python instalatuta
 pip install numpy opencv-python matplotlib pyyaml
-
-
 
 NOLA ERABILI
 
