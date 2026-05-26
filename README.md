@@ -1,66 +1,68 @@
 # PCBTest
 
-Herramientas para inspección visual de placas PCB y gestión de datasets YOLO.
+> 🌐 Beste hizkuntza batzuetan: [Castellano](README_ES.md) | [English](README_EN.md)
+
+PCB txartelak bisualki ikuskatzeko eta YOLO dataseterako tresnak.
 
 ---
 
-## Estructura del repositorio
+## Biltegiko egitura
 
 ```
 PCBTest/
-├── PCBTest/          # Aplicación principal de inspección de placas PCB
+├── PCBTest/          # PCB txartelen ikuskatze aplikazio nagusia
 └── tools/
-    ├── 2dDatasetCreator/   # Generador sintético de datasets 2D para YOLO
-    └── SUBSETMAKER/        # GUI para gestión de datasets YOLO
+    ├── 2dDatasetCreator/   # YOLO-rako 2D dataset sintetikoen sortzailea
+    └── SUBSETMAKER/        # YOLO dataseten kudeaketarako GUIa
 ```
 
 ---
 
 ## PCBTest
 
-Aplicación para inspección visual de placas PCB mediante cámara.
+Kamera bidez PCB txartelak bisualki ikuskatzeko aplikazioa.
 
 **Pipeline:**
 ```
-Cámara → homografía → orientación → YOLO → comparación → OK / MAL
+Kamera → homografia → orientazioa → YOLO → konparazioa → ONDO / TXARTO
 ```
 
-La aplicación captura la imagen de una placa con una cámara, corrige la perspectiva mediante homografía, detecta los componentes con un modelo YOLO y los compara con una placa de referencia. Al final informa si la placa está **OK** o **MAL**.
+Aplikazioak kamera baten bidez txartelaren irudia hartzen du, homografia erabiliz perspektiba zuzentzen du, YOLO modelo baten bidez osagaiak detektatzen ditu eta erreferentziako txartel batekin alderatzen ditu. Amaieran, txartela **ONDO** edo **TXARTO** dagoen jakinarazten du.
 
-Diseñado para ejecutarse en una **Jetson Orin Nano** con Docker.
+**Jetson Orin Nano** batean Docker bidez exekutatzeko diseinatuta.
 
-Consulta [`PCBTest/GUIA_DE_USO.md`](PCBTest/GUIA_DE_USO.md) para instrucciones detalladas de uso.
+Xehetasunak: [`PCBTest/GUIA_DE_USO.md`](PCBTest/GUIA_DE_USO.md).
 
 ---
 
 ## tools/2dDatasetCreator
 
-Script (`yodaut.py`) que genera datasets sintéticos de imágenes 2D para entrenar modelos YOLO.
+YOLO modeloak entrenatzeko 2D irudi sintetikoen dataseterrak sortzen dituen scripta (`yodaut.py`).
 
-Toma imágenes de componentes de la carpeta `input/`, las combina con parámetros configurables (número de elementos, escala, ángulo de rotación) y genera un dataset con imágenes y etiquetas YOLO listo para entrenar.
+`input/` karpetako osagai-irudiak hartzen ditu, parametro konfiguragarriekin (elementu kopurua, eskala, biraketa angelua) konbinatzen ditu eta entrenatzeko prest dagoen dataset bat sortzen du irudi eta YOLO etiketarekin.
 
-Consulta [`tools/2dDatasetCreator/README.md`](tools/2dDatasetCreator/README.md) para más información.
+Xehetasunak: [`tools/2dDatasetCreator/README.md`](tools/2dDatasetCreator/README.md).
 
 ---
 
 ## tools/SUBSETMAKER
 
-Aplicación de escritorio (`subsetmaker.py`) para gestionar datasets YOLO.
+YOLO dataseterrak kudeatzeko mahaigaineko aplikazioa (`subsetmaker.py`).
 
-Funcionalidades principales:
+Funtzionalitate nagusiak:
 
-- **Crear subconjunto** — filtra un dataset por clases y número máximo de imágenes por clase.
-- **Verificar dataset** — detecta etiquetas huérfanas o imágenes sin etiqueta.
-- **Dividir dataset** — divide un split en `train` / `val` con semilla reproducible.
-- **Renumerar etiquetas** — remapea los IDs de clase en todos los ficheros de etiquetas.
-- **JSON → YAML** — convierte anotaciones COCO JSON a formato `data.yaml` de YOLO.
-- **Info YAML** — inspecciona cualquier fichero `data.yaml`.
+- **Azpimultzo bat sortu** — dataset bat iragazi klasearen eta klase bakoitzeko irudi kopuru maximoaren arabera.
+- **Dataseta egiaztatu** — etiketa umezurtzak edo etiketa gabeko irudiak detektatu.
+- **Dataseta banatu** — split bat `train` / `val`-en banatu hazi erreproduzgarriarekin.
+- **Etiketak birzenbakitu** — klase IDak biresleitu etiketa-fitxategi guztietan.
+- **JSON → YAML** — COCO JSON anotazioak YOLOren `data.yaml` formatura bihurtu.
+- **YAML Info** — edozein `data.yaml` fitxategi aztertu.
 
-Consulta [`tools/SUBSETMAKER/README.md`](tools/SUBSETMAKER/README.md) para más información.
+Xehetasunak: [`tools/SUBSETMAKER/README.md`](tools/SUBSETMAKER/README.md).
 
 ---
 
-## Licencia
+## Lizentzia
 
-El código fuente se distribuye bajo **GNU General Public License v3.0 or later** (`GPL-3.0-or-later`).  
-La documentación y materiales explicativos se distribuyen bajo **Creative Commons Attribution-ShareAlike 4.0 International** (`CC-BY-SA-4.0`).
+Iturburu kodea **GNU General Public License v3.0 or later** (`GPL-3.0-or-later`) lizentziapean banatzen da.  
+Dokumentazioa eta material azaltzaileak **Creative Commons Attribution-ShareAlike 4.0 International** (`CC-BY-SA-4.0`) lizentziapean banatzen dira.
