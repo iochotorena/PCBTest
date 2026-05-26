@@ -21,13 +21,13 @@ pip install numpy opencv-python matplotlib pyyaml
 NOLAKO IRUDIAK BEHAR DIRA? 
 YODAUT PCB sintetikoak modu errazean sortzeko sistema bat da. PNG irudiak erabiltzen ditu, denak tamainu berdinekoak. bg.png PCBa bera izango da, eta beste irudiak, PCBko osagai elektronikoak.
 
-<img width="1355" height="934" alt="bg" src="https://github.com/user-attachments/assets/a79af8e0-7dc6-430a-930d-344ead9d0721" />
 bg.png
+<img width="1355" height="934" alt="bg" src="https://github.com/user-attachments/assets/a79af8e0-7dc6-430a-930d-344ead9d0721" />
 
-<img width="1355" height="934" alt="00004_U1_OK" src="https://github.com/user-attachments/assets/ab14ca93-b9ef-4b14-bfa8-39bc5ceaf7cc" />
 U1_OK.png
- 
- 
+<img width="1355" height="934" alt="00004_U1_OK" src="https://github.com/user-attachments/assets/ab14ca93-b9ef-4b14-bfa8-39bc5ceaf7cc" />
+
+
 Irudiak konparatuz, argi ikusten da nola U1_OK.png integratuaren irudiak gardentasuna duen, eta aldi berean, bg.png-ren tamainu bera. Ikusi nola zirkuituan U1 integratuak izan beharko lukeen posizioarekin koinziditzen duen. Zirkuituko osagai guztien irudiak modu honetakoak izan beharko dira.
 
 
