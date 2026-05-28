@@ -16,7 +16,7 @@ Adibide honetan Arduino Uno R3 plaka bat erabiliko da adibide gisa. Bere diments
 - Imagen-> Tamaño del Lienzo  
 	<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5ed513f5-0529-4473-a957-4b7bb3227141" />  
 
-- Sartu tamainuak 
+- Sartu tamainuak  
     <img width="608" height="595" alt="image" src="https://github.com/user-attachments/assets/043ef1fb-673c-4818-a81c-a7796f4a9cd9" />  
 
 - Irudia ez da ondo sartzen, beraz, lientzoa proportzionalki handitu beharko da. Horretarako proportzio-katea itxia behar da.  
