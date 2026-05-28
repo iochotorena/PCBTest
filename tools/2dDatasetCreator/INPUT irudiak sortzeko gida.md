@@ -27,19 +27,20 @@ NOLA SORTU GERUZA MULTIPLEKO IRUDI BAT (ARDUINO ADIBIDEA)
 		- Redimensionar sakatu.
 			<img width="608" height="595" alt="image" src="https://github.com/user-attachments/assets/a271a25d-f138-4206-b36d-41ab9e23ab6c" />
 
-		- Transformacion unificada aukeratu
-    	<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/35547905-d925-4e7f-8438-cb75c2692168" />
-
-
+		
 		- Transparentzia gehitu irudiari. Capa-> Transparencia-> Añadir Canal Alfa
 			<img width="280" height="274" alt="image" src="https://github.com/user-attachments/assets/0922de16-02c0-462f-b27b-96e0b7c8eb32" />
+
 
 		- Aukeratu Seleccion Difusa
 			<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/11200745-cdb1-4a65-8877-d7a730c041bd" />
 
 
 		- Aukeratu irudiaren ingurunea eta Supr sakatuta ezabatu
-  - <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/d2402c44-7e40-4092-b01d-4b63470dedd4" />
+			<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/d2402c44-7e40-4092-b01d-4b63470dedd4" />
+
+		- Transformacion unificada aukeratu
+  			<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/35547905-d925-4e7f-8438-cb75c2692168" />
 
 
 
