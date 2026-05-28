@@ -12,7 +12,7 @@
 Populatu gabeko plakaren irudia ireki GIMP-en:  
 - Archivo-> Abrir-> Aukeratu irudia
   
-Adibide honetan Arduino Uno R3 plaka bat erabiliko da adibide gisa. Bere dimentsioak 68.6 x 53.3mm dira. PCBaren tamainua GIMP-en lientzoaren tamainuaren erreferentzi gisa erabiliko da. Hasierako oinarri gisa 686x533px izango da.  
+Adibide honetan Arduino Uno R3 plaka bat erabiliko da adibide gisa. Bere dimentsioak 68.6 x 53.3mm dira. PCBaren tamainua GIMP-en lientzoaren tamainuaren erreferentzi gisa erabiliko da. Hasierako oinarri gisa 686x533px izango da. Ondorengo prozedimentuarekin irudia eta lienzoa tamainu berekoak egingo dira.  
 - Imagen-> Tamaño del Lienzo  
 	<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5ed513f5-0529-4473-a957-4b7bb3227141" />  
 
