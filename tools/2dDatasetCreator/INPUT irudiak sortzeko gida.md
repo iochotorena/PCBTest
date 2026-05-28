@@ -49,7 +49,9 @@ Modu honetan PCBak irudi osoa okupatuko du.
 ### OSAGAIDUN PCBa KARGATU ETA BERDIMENTSIONATU
 
 Osagaidun plaka kargatzeko: Archivo-> **Abrir como capas**-> Osagaidun irudia aukeratu. Ondoren aurreko prozedurako behar diren pausuak eman irudi hau ere guztiz berdimentsionatu arte.
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5884c900-a066-4fa4-9c95-b071659e233a" />  
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/773f45b8-db2d-46f2-8d3d-497815df21d7" />  
+
+
 
 
 
