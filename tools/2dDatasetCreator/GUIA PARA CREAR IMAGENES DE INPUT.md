@@ -89,7 +89,8 @@ Para cargar la placa con componentes: Archivo -> **Abrir como capas** -> Selecci
 ### SEPARAR LAS CAPAS DE IMAGEN
 
 - Esta parte del proceso comienza eliminando la capa `COMPONENTES`: **haz clic derecho sobre la capa COMPONENTES** y después selecciona **Eliminar capas** para borrarla.
-<img width="659" height="408" alt="image" src="https://github.com/user-attachments/assets/67c5aa6a-155e-467e-b506-198a9d3fa5ed" />
+<img width="675" height="659" alt="image" src="https://github.com/user-attachments/assets/13d4dced-04c0-4493-9eb2-3aae1131c79c" />
+
 
 - Selecciona **Archivo -> Exportar capas**. En el cuadro de texto **Nombre** escribe `[00001]_[layername]` y en el siguiente cuadro `png`. Pulsa **Exportar**. `bg.png` y todos los componentes se separarán en imágenes diferentes.
 - <img width="675" height="659" alt="image" src="https://github.com/user-attachments/assets/ea02b3c6-f12c-4236-a28a-ee84dd7230d2" />
