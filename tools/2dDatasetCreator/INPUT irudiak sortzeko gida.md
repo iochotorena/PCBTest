@@ -94,7 +94,6 @@ Osagaidun plaka kargatzeko: Archivo-> **Abrir como capas**-> Osagaidun irudia au
   
 - **Archivo-> Exportar Capas** aukeratu. **Nombre** textu-kaxan [00001]_[layername] idatzi eta hurrengo kaxan png. **Exportar** sakatu. bg.png eta osagai guztiak irudi besberdinetan banatuko dira.
 
-- 
 
 
  
