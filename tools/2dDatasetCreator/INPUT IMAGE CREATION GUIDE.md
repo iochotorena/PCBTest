@@ -92,3 +92,5 @@ To load the board with components: File -> **Open as Layers** -> Choose the imag
 <img width="659" height="408" alt="image" src="https://github.com/user-attachments/assets/67c5aa6a-155e-467e-b506-198a9d3fa5ed" />
 
 - Select **File -> Export Layers**. In the **Name** text box, enter `[00001]_[layername]`, and in the next box enter `png`. Click **Export**. `bg.png` and all components will be exported as separate images.
+<img width="675" height="659" alt="image" src="https://github.com/user-attachments/assets/3340f584-e490-443a-9b7d-0bd973d24c68" />
+
