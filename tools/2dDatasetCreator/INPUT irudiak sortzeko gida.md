@@ -58,33 +58,44 @@ Osagaidun plaka kargatzeko: Archivo-> **Abrir como capas**-> Osagaidun irudia au
   
 - Hau eginda eskubi aldean ikusi beharko litzateke kargatu diren bi irudien minuaturekin. Bat osagai gabeko irudi-geruza izango da, eta bestea berriz, osagaiduna. Osagaidunak egon beharko luke lehenengo, ala ez bada, saguarekin sakatu eta eramanez gora mugitu daiteke. Gainean dauden geruza irudian ikusiko dira, eta azpian daudenak berriz, tapatuak izango dira. Aukeratu **Seleccion Rectangular** tresna(goran ezkerretan)
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ad230274-3b0c-4b70-b320-6c1131b67329" />
-
+  
 - Sagua erabiliz osagai bat aukeratuko ondoren bere inguruan selekzio-kaxa bat sortu beharko da.
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/0a19bcbb-9d74-4401-ad9c-86f18d2fbbf9" />
-
+  
 - **Editar-> Copiar** (Ctrl+C) egin.
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5145f793-2ec5-4c13-8aa7-91e2203b6f66" />
-
+  
 - **Editar-> Pegar como-> Pegar como capa unica en su lugar** egin. Ezer ez dela aldatu ditudien arren, irudi geruza berri bat agertu da, Copia de XXXXX izenekoa. Irudi geruzaren izenaren ezkerraldean dagoen begietan sakatuz, irudi geruzak garden bilakatzen dira, oso erabilgarria prozesu honetan. Osagaidun PCB eta osagai gabea ikustezin bihurtu beraien begietan sakatuz.
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/f43f48b1-bbc6-4420-9aab-20fe003f2108" />
-
+  
 - **Capa-> Capa a tamaño de imagen** aukeratu. Honek sortu berri den irudi-geruza irudiaren tamainura zabalduko du. Eta ondo lan egiteko, **Seleccionar-> nada** aukeratu.
   
 - Irudia garbitu egin behar da. Horretarako tresnarik erosoena **Herramienta de seleccion libre** (lazoa) da.
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/baa5a1c7-1ce7-4c41-bf8f-3ce096ddd8b3" />
-
+  
 -  Behin eta berriz saguan klik eginda eremu bat definitu eta itxi. Kontutan eduki Copia de XXXXXX irudi geruza aukeratuta edukitzeaz. **Supr** sakatu aukeratutako ezabatzeko. Errepikatu irudia garbitu arte.
 <img width="496" height="728" alt="image" src="https://github.com/user-attachments/assets/3cc0ebee-fbb8-4462-bd67-e6b88e0d7dd4" />
 <img width="1133" height="497" alt="image" src="https://github.com/user-attachments/assets/56875b3d-4f1e-4823-b46a-d8c82def3603" />
-
+  
 - Irudi-geruzaren gainean jarri, bi klik egin saguarekin (edo F2 sakatu) eta osagaiaren izena jarri. Adibide hoentan U1 jarriko da.
 <img width="1327" height="550" alt="image" src="https://github.com/user-attachments/assets/cfe4315f-f2e7-463e-9ceb-a2f2b3dc261d" />
-
-- Egin berdina beste geruzekin PCB eta OSAGAIAK deituz.
+  
+- Egin berdina beste geruzekin **bg** eta **OSAGAIAK** deituz.
 <img width="1221" height="615" alt="image" src="https://github.com/user-attachments/assets/956c7ec3-6c9a-4ca2-8798-51c889397126" />
-
+  
 - Errepikatu osagai guztiekin. Plakaren konplexutasunaren arabera denbora gehiago edo gutxiago kostatuko da.
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/286b995f-6a1a-4d80-b8da-a3f6f3625d8c" />
+
+
+### IRUDI-GERUZAK BANATU
+
+- Prozesuaren zati hau OSAGAIAK geruza ezabatuz hasiko da: **egin klik saguaren eskubiko botoarekin OSAGAIAK irudi-geruzan**, eta ondoren, **Eliminar Capas** aukeratu OSAGAIAK geruza ezabatzeko.
+<img width="659" height="408" alt="image" src="https://github.com/user-attachments/assets/67c5aa6a-155e-467e-b506-198a9d3fa5ed" />
+  
+- **Archivo-> Exportar Capas** aukeratu. **Nombre** textu-kaxan [00001]_[layername] idatzi eta hurrengo kaxan png. **Exportar** sakatu. bg.png eta osagai guztiak irudi besberdinetan banatuko dira.
+
+- 
+
 
  
 
