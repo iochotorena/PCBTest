@@ -83,17 +83,10 @@ Osagaidun plaka kargatzeko: Archivo-> **Abrir como capas**-> Osagaidun irudia au
 - Egin berdina beste geruzekin PCB eta OSAGAIAK deituz.
 <img width="1221" height="615" alt="image" src="https://github.com/user-attachments/assets/956c7ec3-6c9a-4ca2-8798-51c889397126" />
 
-- Errepikatu osagai guztiekin. PLakaren konplexutasunaren arabera denbora gehiago edo gutxiago kostatuko da.
+- Errepikatu osagai guztiekin. Plakaren konplexutasunaren arabera denbora gehiago edo gutxiago kostatuko da.
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/286b995f-6a1a-4d80-b8da-a3f6f3625d8c" />
 
-
-
-- 
-
-
-
-
-
-- 
+ 
 
 
 
