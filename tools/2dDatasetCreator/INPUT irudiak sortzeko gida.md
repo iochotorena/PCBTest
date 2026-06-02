@@ -93,40 +93,7 @@ Osagaidun plaka kargatzeko: Archivo-> **Abrir como capas**-> Osagaidun irudia au
 <img width="659" height="408" alt="image" src="https://github.com/user-attachments/assets/67c5aa6a-155e-467e-b506-198a9d3fa5ed" />
   
 - **Archivo-> Exportar Capas** aukeratu. **Nombre** textu-kaxan [00001]_[layername] idatzi eta hurrengo kaxan png. **Exportar** sakatu. bg.png eta osagai guztiak irudi besberdinetan banatuko dira.
-
-
-
- 
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-	  
-    
-    
-
-
-
-
- 
-
-
-
-	
-
+<img width="675" height="659" alt="image" src="https://github.com/user-attachments/assets/f38e2025-c3b8-4f8f-bf13-ba2c41a8c3b7" />
   
 
 
