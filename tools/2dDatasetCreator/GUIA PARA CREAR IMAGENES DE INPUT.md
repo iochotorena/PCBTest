@@ -92,3 +92,5 @@ Para cargar la placa con componentes: Archivo -> **Abrir como capas** -> Selecci
 <img width="659" height="408" alt="image" src="https://github.com/user-attachments/assets/67c5aa6a-155e-467e-b506-198a9d3fa5ed" />
 
 - Selecciona **Archivo -> Exportar capas**. En el cuadro de texto **Nombre** escribe `[00001]_[layername]` y en el siguiente cuadro `png`. Pulsa **Exportar**. `bg.png` y todos los componentes se separarán en imágenes diferentes.
+- <img width="675" height="659" alt="image" src="https://github.com/user-attachments/assets/ea02b3c6-f12c-4236-a28a-ee84dd7230d2" />
+
