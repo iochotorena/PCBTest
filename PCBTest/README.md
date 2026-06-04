@@ -185,7 +185,7 @@ Estructura:
 referenceBoard/  
 ├── notes.json  
 └── labels/  
-      └── referencia.txt  
+    └── referencia.txt  
 
 ### notes.json
 
