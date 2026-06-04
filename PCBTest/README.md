@@ -37,36 +37,36 @@ Cámara
 La carpeta del proyecto debe tener esta estructura:
 
 pcbTest/
-├── pcb_gui_inspeccion.py
-├── pcb_gui_inspeccion.sh
-│
-├── pcb_realtime_pipeline.py
-├── pcb_realtime_pipeline.sh
-│
-├── pcb_camera_test.py
-├── pcb_camera_test.sh
-│
-├── procesar_pcb_homografia_yolo.py
-├── comparar_yolo_reference.py
-│
-├── config_homografia.json
-├── keypoints/
-│   └── serigrafia.png
-│
-├── referenceBoard/
-│   ├── notes.json
-│   └── labels/
-│       └── referencia.txt
-│
-├── weights/
-│   └── best.pt
-│
-├── results/
-│   └── .gitkeep
-│
-├── README.md
-├── install_notes.md
-└── .gitignore
+├── pcb_gui_inspeccion.py  
+├── pcb_gui_inspeccion.sh  
+│  
+├── pcb_realtime_pipeline.py  
+├── pcb_realtime_pipeline.sh  
+│  
+├── pcb_camera_test.py  
+├── pcb_camera_test.sh  
+│  
+├── procesar_pcb_homografia_yolo.py  
+├── comparar_yolo_reference.py  
+│  
+├── config_homografia.json  
+├── keypoints/  
+│   └── serigrafia.png  
+│  
+├── referenceBoard/  
+│   ├── notes.json  
+│   └── labels/  
+│       └── referencia.txt  
+│  
+├── weights/  
+│   └── best.pt  
+│  
+├── results/  
+│   └── .gitkeep  
+│  
+├── README.md  
+├── install_notes.md  
+└── .gitignore  
 
 ---
 
