@@ -182,10 +182,10 @@ La carpeta referenceBoard contiene la referencia de la placa correcta.
 
 Estructura:
 
-referenceBoard/
-├── notes.json
-└── labels/
-    └── referencia.txt
+referenceBoard/  
+├── notes.json  
+└── labels/  
+    └── referencia.txt  
 
 ### notes.json
 
