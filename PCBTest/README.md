@@ -36,7 +36,7 @@ Cámara
 
 La carpeta del proyecto debe tener esta estructura:
 
-pcbTest/
+pcbTest/  
 ├── pcb_gui_inspeccion.py  
 ├── pcb_gui_inspeccion.sh  
 │  
