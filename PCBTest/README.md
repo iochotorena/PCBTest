@@ -404,23 +404,23 @@ results/gui_pcb_inspection/
 
 Estructura típica:
 
-results/gui_pcb_inspection/
-├── raw/
-│   └── latest_raw.jpg
-├── corrected/
-│   └── latest_corrected.jpg
-├── overlay/
-│   └── latest_result.jpg
-├── overlay_failures/
-│   └── latest_failures.jpg
-├── components/
-│   └── latest_components.csv
-├── comparison/
-│   └── latest_comparison.csv
-├── camera_test/
-│   └── latest_camera_test.jpg
-├── debug/
-└── summary_realtime.csv
+results/gui_pcb_inspection/  
+├── raw/  
+│   └── latest_raw.jpg  
+├── corrected/  
+│   └── latest_corrected.jpg  
+├── overlay/  
+│   └── latest_result.jpg  
+├── overlay_failures/  
+│   └── latest_failures.jpg  
+├── components/  
+│   └── latest_components.csv  
+├── comparison/  
+│   └── latest_comparison.csv  
+├── camera_test/  
+│   └── latest_camera_test.jpg  
+├── debug/  
+└── summary_realtime.csv  
 
 ---
 
