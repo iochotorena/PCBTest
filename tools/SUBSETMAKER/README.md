@@ -1,4 +1,6 @@
-# SubsetMaker
+# SubsetMaker  
+
+> 🌐 Otros idiomas: [Español](LEEME.md) | [English](README_EN.md)
 
 YOLO Ikuskapen Artifizialeko datu-multzoen etiketa-orekatutako azpimultzoak sortzeko GUI aplikazioa.
 
