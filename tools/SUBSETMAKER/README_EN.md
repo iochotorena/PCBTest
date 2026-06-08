@@ -1,5 +1,6 @@
 # SubsetMaker
 
+  > 🌐 Other Languages: [Euskera](README.md) | [Español](LEEME.md)
 A GUI application to create label-balanced subsets of YOLO Computer Vision datasets.
 
 ![SubsetMaker screenshot](https://github.com/user-attachments/assets/96bebab4-5fe4-416b-a2c5-462bf297fa62)
