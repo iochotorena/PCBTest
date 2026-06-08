@@ -1,5 +1,7 @@
 # SubsetMaker
 
+> 🌐 Otros idiomas: [Euskera](README.md) | [English](README_EN.md)
+
 Una aplicación con interfaz gráfica para crear subconjuntos equilibrados por etiqueta de conjuntos de datos YOLO de Visión Artificial.
 
 ![Captura de pantalla de SubsetMaker](https://github.com/user-attachments/assets/96bebab4-5fe4-416b-a2c5-462bf297fa62)
