@@ -1,5 +1,7 @@
 ### YODAUT - Yolo Data Automation
-  
+
+> 🌐 Otros idiomas: [Español](README_ES.md) | [English](README_EN.md)
+
 ### ZER DA?
 - YOLOrentzako dataset sintetiko sinpleak sortzeko Python-script bat da YODAUT. Input karpetan bg.png eta beste irudi batzu (png formatuan, transparentzia nahitaezkoa bait du) gorde eta script-a exekutatzean irudi hauen arteko konbinaketak sortzen dira, konbinaketa desberdinak sortzeko hainbat parametro doitzeko aukerarekin. Konbinaketa hauetatik irudi-label fitxategi bikoteak sortuko dira.
   
