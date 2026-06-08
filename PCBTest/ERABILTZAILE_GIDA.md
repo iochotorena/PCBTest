@@ -346,7 +346,7 @@ YOLO konfiantza pixka bat jaitsi edo argiztapena eta fokua berrikusi.
 
 ---
 
-## 10. Arazo ohikoak
+## 10. Ohiko arazoak
 
 **Errorea: kamera ezin da ireki**
 
