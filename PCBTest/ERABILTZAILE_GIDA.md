@@ -1,5 +1,7 @@
 # pcbTest – Erabiltzaile gida
 
+> 🌐 Beste hizkuntza batzuetan: [Castellano](GUIA_DE_USO.md) | [English](USER_GUIDE.md)
+
 *GPL-3.0-or-later / CC-BY-SA-4.0*
 
 ---
